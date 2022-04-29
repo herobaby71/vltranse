@@ -1,0 +1,813 @@
+    1  nvcc --version 
+    2  python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.10/index.html
+    3  pip install wandb
+    4  clear
+    5  pip freeze | grep dete
+    6  python
+    7  jupytor
+    8  jupyter-notebook 
+    9  clear
+   10  ifconfig
+   11  clear
+   12  ls
+   13  ifconfig
+   14  cleat
+   15  df
+   16  df -h
+   17  pwd
+   18  df -k .
+   19  cd vrdtransr/
+   20  ls
+   21  jupyter-notebook 
+   22  clear
+   23  jupyter-notebook 
+   24  clear
+   25  ls
+   26  cd ..
+   27  ls
+   28  cd checkpoint/
+   29  ls
+   30  cd ..
+   31  ls
+   32  cd src
+   33  ls
+   34  cd ..
+   35  ls
+   36  cd data
+   37  ls
+   38  clear
+   39  ls
+   40  clear
+   41  exit
+   42  clear
+   43  ls
+   44  cd dev
+   45  ls
+   46  source research_env/bin/activate
+   47  clear
+   48  jupyter-notebook --no-browser --port=8080
+   49  ifconfig
+   50  jupyter-notebook --no-browser --port=808
+   51  exit
+   52  clear
+   53  cd dev
+   54  ls
+   55  clear
+   56  ls
+   57  cd vrdtransr/
+   58  ls
+   59  clear
+   60  lsb_release -a
+   61  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+   62  lspci | grep VGA
+   63  lspci -v | less
+   64  lspci | grep VGA
+   65  lspci | grep NVIDIA
+   66  dmesg | grep NVRM
+   67  ls
+   68  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   69  clear
+   70  ls
+   71  rm google-chrome-stable_current_amd64.deb 
+   72  chrome
+   73  sudo dpkg -i google-chrome-stable_current_amd64.deb
+   74  ls
+   75  clear
+   76  python3
+   77  clear
+   78  ls
+   79  mkdir dev
+   80  cd dev
+   81  clear
+   82  ls
+   83  python3 -m venv research_env
+   84  apt install python3.8-venv
+   85  sudo apt install python3.8-venv
+   86  python3 -m venv research_env
+   87  CLEAR
+   88  clear
+   89  ls
+   90  source research_env/bin/activate
+   91  lambda
+   92  python
+   93  curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-371.0.0-linux-x86_64.tar.gz
+   94  ./google-cloud-sdk/install.sh
+   95  ls
+   96  tar -xf google-cloud-sdk-371.0.0-linux-x86_64.tar.gz 
+   97  ls
+   98  rm -rf google-cloud-sdk-371.0.0-linux-x86_64.tar.gz 
+   99  clear
+  100  ls
+  101  ./google-cloud-sdk/install.sh
+  102  clear
+  103  gcloud
+  104  ./google-cloud-sdk/bin/gcloud init
+  105  gcloud
+  106  source ~/.bashrc
+  107  gcloud
+  108  vscode
+  109  sudo snap install --classic code
+  110  gsutil 
+  111  code .
+  112  ls
+  113  clear
+  114  gcloud compute scp --recurse instance-3:sudo snap install --classic code
+  115  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr .
+  116  gcloud compute regions list
+  117  clear
+  118  ls
+  119  gcloud config set compute/zone us-west4-a
+  120  clear
+  121  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr .
+  122  ls
+  123  cd vrdtransr/
+  124  ls
+  125  cd ..
+  126  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/data ./vrdtransr/
+  127  ls
+  128  cd vrdtransr/
+  129  ls
+  130  cd data
+  131  ls
+  132  rm -rf vrd
+  133  ls
+  134  clear
+  135  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/data.gz ./vrdtransr/
+  136  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/data.gz ./vrdtransr
+  137  ls
+  138  cd vr
+  139  ls
+  140  mv vrdtransr ./data.gz
+  141  cp ./data.gz ..
+  142  ls
+  143  cd ..
+  144  ls
+  145  rm -rf data
+  146  ls
+  147  history | grep tar
+  148  tar -xf ./data.gz
+  149  ls
+  150  cd data/
+  151  ls
+  152  cd ..
+  153  ls
+  154  rm -rf data.gz
+  155  clear
+  156  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/src.gz .
+  157  clear
+  158  ls
+  159  history | grep tar
+  160  tar -xf sr
+  161  tar -xf src.gz
+  162  clear
+  163  ls
+  164  rm -rf src.gz
+  165  clear
+  166  ls
+  167  cd checkpoint/
+  168  ls
+  169  rm -rf vrd2_model_transr_23000.pt 
+  170  cd ..
+  171  ls
+  172  history | grep tar
+  173  LS
+  174  ls
+  175  clesar
+  176  clear
+  177  ls
+  178  cd src
+  179  ls
+  180  clear
+  181  ls
+  182  history | scp
+  183  history | grep scp
+  184  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/checkpoint/vrd2_model_transr_23000.pt ../checkpoint
+  185  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/generated.gz ../
+  186  clear
+  187  ls
+  188  cd ..
+  189  clear
+  190  ls
+  191  history | grep tar
+  192  tar -xf gen
+  193  tar -xf generated.gz
+  194  ls
+  195  cd generated/
+  196  ls
+  197  clear
+  198  cd ..
+  199  ls
+  200  rm -rf generated
+  201  tar -xf generated.gz
+  202  rm -rf generated.gz
+  203  clear]
+  204  clear
+  205  df -h
+  206  df -h .
+  207  history | gcp
+  208  history | gcloud
+  209  history | grepgcloud
+  210  history | grep gcloud
+  211  ls
+  212  cd checkpoint/
+  213  ls
+  214  rm -rf model_final.pth 
+  215  gcloud compute scp --recurse instance-3:/home/thanh1998tom/vrdtransr/checkpoint/model_final.pth .
+  216  ls
+  217  clear
+  218  ls
+  219  pip
+  220  pip freeze
+  221  pip freeze | grep detectron2
+  222  pip uninstall detectron2
+  223  python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html
+  224  NVCC
+  225  nvcc
+  226  nvcc -v
+  227  history
+  228  nvcc --version
+  229  pip freeze | grep detectron2
+  230  python -m pip uninstall detectron2
+  231  cd ..
+  232  ls
+  233  cd ..
+  234  clear
+  235  ls
+  236  cd dev
+  237  ls
+  238  python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+  239  pip show torch
+  240  clear
+  241  gcc
+  242  sudo apt update
+  243  sudo apt install build-essential
+  244  sudo apt-get install manpages-dev
+  245  gcc --version
+  246  v++
+  247  g++
+  248  gcc --version
+  249  apt-get install ninja-build
+  250  sudo apt-get install ninja-build
+  251  python -m pip install 'git+https://github.com/facebookresearch/detectron2.git'
+  252  c==
+  253  c++
+  254  git clone https://github.com/facebookresearch/detectron2.git
+  255  python -m pip install -e detectron2
+  256  sys.platform linux
+  257  nvcc --version
+  258  gcc -v
+  259  sudo apt-get remove gcc g++
+  260  sudo apt-get install gcc-7.1 g++-7.1
+  261  gcc
+  262  sudo apt install gcc-6
+  263  sudo apt install build-essential
+  264  gcc --version
+  265  g++
+  266  g++ --version
+  267  sudo apt install g++-7
+  268  g++ --version
+  269  sudo apt install gcc-7
+  270  sudo apt install gcc-7.3
+  271  sudo apt install gcc-73
+  272  python -m pip install -e detectron2
+  273  sudo apt -y install gcc-6 g++-6
+  274  sudo apt -y install g++-6
+  275  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7
+  276  gcc --version
+  277  history | detectron
+  278  history | grep detectron
+  279  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 7
+  280  python -m pip install -e detectron2
+  281  python -m pip install -e detectron2 --verbose
+  282  clear
+  283  sudo apt uninstall ninja
+  284  sudo apt remove ninja
+  285  sudo apt remove ninja-build
+  286  python -m pip install -e detectron2 --verbose
+  287  clear
+  288  pip freeze | grep torch
+  289  pip install pybind11
+  290  python -m pip install -e detectron2 --verbose
+  291  pip install pybind11
+  292  /usr/bin/python
+  293  c;ear
+  294  clear
+  295  ls
+  296  source research_env/bin/activate
+  297  clear
+  298  ls
+  299  pip freeze
+  300  clear
+  301  nvcc --version
+  302  pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+  303  python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html
+  304  pip install bdist_wheel
+  305  python setup.py bdist_wheel
+  306  pip install wheel
+  307  python -m pip install detectron2 -f   https://dl.fbaipublicfiles.com/detectron2/wheels/cu111/torch1.9/index.html
+  308  python
+  309  c;ear
+  310  pip install jupyter-notebook
+  311  pip install notebook
+  312  jupyter-notebook 
+  313  ls
+  314  source research_env/bin/activate
+  315  pip3 install opencv-python
+  316  ls
+  317  clear
+  318  ls
+  319  rm -rf detectron2/
+  320  clear
+  321  ls
+  322  cd vrdtransr/
+  323  ls
+  324  pip install transformers
+  325  code .
+  326  ls
+  327  clear
+  328  ls
+  329  cd checkpoint/
+  330  l;s
+  331  ls
+  332  cp vrd2_model_transr_23000.pt model_final.pth 
+  333  pip install tqdm
+  334  pip3 install ipywidgets --user
+  335  pip3 install ipywidgets
+  336  cd ..
+  337  ls
+  338  cd generated/
+  339  ls
+  340  cat trained_triples.json 
+  341  clear
+  342  ssh
+  343  ls
+  344  ls -la ~/.ssh/
+  345  ifconfig
+  346  clear
+  347  ls
+  348  cd ..
+  349  ls
+  350  cd checkpoint/
+  351  ;s
+  352  ls
+  353  exit
+  354  jupyter-notebook --no-browser --port=808
+  355  jupyter-notebook --no-browser --port=8080
+  356  clear
+  357  \ls
+  358  cd dev
+  359  ls
+  360  ps
+  361  clear
+  362  history
+  363  jupyter-notebook --no-browser --port=8080
+  364  clear
+  365  ls
+  366  source research_env/bin/activate
+  367  clear
+  368  cd vrdtransr/
+  369  jupyter-notebook --no-browser --port=8080
+  370  clear
+  371  ls
+  372  cd dev
+  373  source research_env/bin/activate
+  374  jupyter-notebook --no-browser --port=8080
+  375  exit
+  376  clear
+  377  ls
+  378  cd dev
+  379  ls
+  380  cd vrdtransr/
+  381  ls
+  382  cd src
+  383  ls
+  384  cd utils/
+  385  ls
+  386  cd ..
+  387  ls
+  388  cat config.py
+  389  cd dev
+  390  clear
+  391  ls
+  392  source research_env/bin/activate
+  393  clear
+  394  ls
+  395  cd vrdtransr/
+  396  ls
+  397  clear
+  398  ls
+  399  history | grep jupyter-notebook
+  400  jupyter-notebook --no-browser --port=8080
+  401  exit
+  402  clear
+  403  ls
+  404  cd dev
+  405  source research_env/bin/activate
+  406  clear
+  407  cd vrdtransr/
+  408  jupyter-notebook --no-browser --port=8080
+  409  ls
+  410  clear
+  411  ls
+  412  cd dev
+  413  clear
+  414  ls
+  415  source research_env/bin/activate
+  416  clear
+  417  ls
+  418  cd vrdtransr/
+  419  ls
+  420  clear
+  421  history | grep jup
+  422  jupyter-notebook --no-browser --port=8080
+  423  ls
+  424  clear
+  425  ls
+  426  cd dev
+  427  ls
+  428  source research_env/bin/activate
+  429  clear
+  430  ls
+  431  cd vrdtransr/
+  432  ls
+  433  history | grep jup
+  434  jupyter-notebook --no-browser --port=8080
+  435  cd dev
+  436  source research_env/
+  437  source research_env/bin/activate
+  438  clear
+  439  ls
+  440  cd vrdtransr/
+  441  ;s
+  442  history | grep jup
+  443  jupyter-notebook --no-browser --port=8081
+  444  ps | grep 8080
+  445  ps | grep 8081
+  446  lsof
+  447  lsof -ti:8080
+  448  lsof -ti:8081
+  449  exit
+  450  clear
+  451  ls
+  452  cd dev
+  453  ls
+  454  source research_env/bin/activate
+  455  clear
+  456  ls
+  457  cd vrdtransr/
+  458  history | grep jup
+  459  jupyter-notebook --no-browser --port=8080
+  460  cd dev
+  461  source research_env/bin/activate
+  462  clear
+  463  ls
+  464  cd vrr
+  465  cd vrdtransr/
+  466  clear
+  467  ls
+  468  history | grep jupyter
+  469  jupyter-notebook --no-browser --port=8080
+  470  ls
+  471  clear
+  472  ls
+  473  cd dev
+  474  ls
+  475  cd vrdtransr/
+  476  ls
+  477  clear
+  478  ls
+  479  cd data
+  480  ls
+  481  cd ..
+  482  ls
+  483  cd src
+  484  clear
+  485  ls
+  486  cd tests/
+  487  ls
+  488  cat extract_image_features.py 
+  489  cd ..
+  490  ls
+  491  clear
+  492  ls
+  493  cd utils/
+  494  ls
+  495  cat predictor.py 
+  496  clear
+  497  ls
+  498  cat register_dataset.py 
+  499  clear
+  500  ls
+  501  cat dataset.py
+  502  ls
+  503  clear
+  504  ls
+  505  cd dev
+  506  ls
+  507  source research_env/bin/activate
+  508  history |grep jupy
+  509  cd vrdtransr/
+  510  jupyter-notebook --no-browser --port=8081
+  511  clear
+  512  ls
+  513  cd dev
+  514  source research_env/bin/activate
+  515  ls
+  516  cd vrdtransr/
+  517  history | grep jup
+  518  jupyter-notebook --no-browser --port=8080
+  519  exit
+  520  clear
+  521  ls
+  522  cd dev
+  523  source research_env/bin/activate
+  524  clear
+  525  ls
+  526  cd vrdtransr/
+  527  ls
+  528  cd ..
+  529  ls
+  530  cd vrdtransr/
+  531  ls
+  532  pip install seaborn
+  533  pip freeze > requirements.txt
+  534  clear
+  535  ls
+  536  cd dev
+  537  ls
+  538  cd research_env/
+  539  cd ..
+  540  source research_env/bin/activate
+  541  clear
+  542  ls
+  543  cd vrdtransr/
+  544  ls
+  545  clear
+  546  history | grep jup
+  547  jupyter-notebook --no-browser --port=8080
+  548  cd dev
+  549  ls
+  550  source research_env/bin/activate
+  551  clear
+  552  ls
+  553  cd vrdtransr/
+  554  ls
+  555  history | grep jup
+  556  jupyter-notebook --no-browser --port=8080
+  557  clear
+  558  cd dev
+  559  source research_env/bin/activate
+  560  clea
+  561  rls
+  562  pip install wandb
+  563  wandb login
+  564  clear
+  565  clear
+  566  cd dev
+  567  source research_env/bin/activate
+  568  clear
+  569  cd vrdtransr/
+  570  history | grep jup
+  571  jupyter-notebook --no-browser --port=8080
+  572  clear
+  573  ls
+  574  cd dev
+  575  ls
+  576  source research_env/bin/activate
+  577  clear
+  578  exit
+  579  exit()
+  580  exit
+  581  source ../research_env/bin/activate
+  582  clear
+  583  jupyter nbconvert --to python my_notebook.ipynb
+  584  jupyter nbconvert --to python notebook.ipynb
+  585  jupyter nbconvert --to python notebook_visualization-original.ipynb
+  586  jupyter nbconvert --to python notebook_visualization.ipynb
+  587  jupyter nbconvert ./notebook_visuali
+  588  jupyter nbconvert --to python ./src/notebook_visualization.ipynb 
+  589  clear
+  590  ls
+  591  cd src
+  592  clear
+  593  python train
+  594  ls
+  595  source ../research_env/bin/activate
+  596  clear
+  597  ls
+  598  cd src
+  599  ls
+  600  python train.py 
+  601  cat  ./wandb/run-20220228_162447-19y7e8k6/logs/debug.log
+  602  clear
+  603  python train.py 
+  604  top
+  605  clear
+  606  df -h
+  607  pwd
+  608  python train.py 
+  609  ls
+  610  ls
+  611  cd dev
+  612  source research_env/bin/activate
+  613  clear
+  614  ls
+  615  cd vrdtransr/
+  616  ls
+  617  history | grep jup
+  618  jupyter-notebook --no-browser --port=8080
+  619  source ../research_env/bin/activate
+  620  clear
+  621  ls
+  622  cd src
+  623  python train
+  624  python train.py
+  625  clear
+  626  ls
+  627  python test.py 
+  628  clear
+  629  python test.py 
+  630  clear
+  631  ls
+  632  python test.py 
+  633  clear
+  634  python test.py 
+  635  clear
+  636  nohup python test.py &
+  637  clear
+  638  exit
+  639  source /home/thanhtran/dev/research_env/bin/activate
+  640  ls
+  641  clear
+  642  ls
+  643  cd checkpoint/
+  644  ls
+  645  mv vltranse_12000.pt vltranse_32_12000.pt
+  646  clear
+  647  history | grep jup
+  648  jupyter-notebook --no-browser --port=8080
+  649  cd ..
+  650  jupyter-notebook --no-browser --port=8080
+  651  source /home/thanhtran/dev/research_env/bin/activate
+  652  exir
+  653  exit
+  654  source ../research_env/bin/activate
+  655  clear
+  656  ls
+  657  cd src
+  658  cat nohup.out 
+  659  clear
+  660  exit
+  661  source /home/thanhtran/dev/research_env/bin/activate
+  662  source /home/thanhtran/dev/research_env/bin/activate
+  663  ssh -N -f -L localhost:8080:localhost:8080 thanhtran@68rstj3-l.isd.ad.flinders.edu.au
+  664  clear
+  665  ls
+  666  cd ..
+  667  ls
+  668  cd ..
+  669  ls
+  670  cd dev
+  671  ls
+  672  git clone git@github.com:jz462/Large-Scale-VRD.pytorch.git
+  673  git clone https://github.com/jz462/Large-Scale-VRD.pytorch.git
+  674  ls
+  675  cd Large-Scale-VRD.pytorch/
+  676  code .
+  677  cd ..
+  678  clear
+  679  ls
+  680  history | grep ssh
+  681  clear
+  682  ls
+  683  history | grep jup
+  684  jupyter-notebook --no-browser --port=8080
+  685  source /home/thanhtran/dev/research_env/bin/activate
+  686  exit
+  687  source /home/thanhtran/dev/research_env/bin/activate
+  688  history | grep jup
+  689  upyter-notebook --no-browser --port=8080
+  690  jupyter-notebook --no-browser --port=8080
+  691  source /home/thanhtran/dev/research_env/bin/activate
+  692  /home/thanhtran/dev/research_env/bin/python3
+  693  clear
+  694  ls
+  695  cd src
+  696  ls
+  697  cd modeling/
+  698  python temp
+  699  python temp.py 
+  700  cd ..
+  701  cd utils/
+  702  clear
+  703  python temp.py
+  704  cd ..
+  705  ls
+  706  clear
+  707  python temporary_testing.py 
+  708  python temporary_testing.py \
+  709  ls
+  710  delta_height = (image_dim[1] - cropped_image.shape[1]) // 2
+  711  item["image"] = cropped_image
+  712  history | grep jup
+  713  clear
+  714  history | grep jup
+  715  jupyter-notebook
+  716  source ../research_env/bin/activate
+  717  clear
+  718  jupyter-notebook
+  719  history | grep jup
+  720  jupyter-notebook --no-browser --port=8080
+  721  source /home/thanhtran/dev/research_env/bin/activate
+  722  cd ..
+  723  ls
+  724  clear
+  725  ls
+  726  git clone https://github.com/HobbitLong/SupContrast.git
+  727  ls
+  728  cd SupContrast/
+  729  code .
+  730  ls
+  731  cd ..
+  732  ls
+  733  cd Large-Scale-VRD.pytorch/
+  734  clear
+  735  ls
+  736  code .
+  737  pip install 3.9501
+  738  pip install pytorch-mertric-learning
+  739  cd ..
+  740  ls
+  741  git clone
+  742  git clone https://github.com/KevinMusgrave/pytorch-metric-learning.git
+  743  mv pytorch-metric-learning/ ./vrdtransr/
+  744  clear
+  745  mv ./vrdtransr/src/pytorch-metric-learning/ ./
+  746  cd pytorch-metric-learning/
+  747  ls
+  748  cat build_script.sh 
+  749  pip install pytorch-metric-learning
+  750  clear
+  751  cd ..
+  752  ls
+  753  cd vrdtransr/
+  754  clear
+  755  ls
+  756  pip freeze > requirements.txt 
+  757  cat requirements.txt 
+  758  clear
+  759  ls
+  760  source ../research_env/bin/activate
+  761  clear
+  762  ls
+  763  history | grep jup
+  764  jupyter-notebook --no-browser --port=8080
+  765  source ../research_env/bin/activate
+  766  history | grep jupy
+  767  jupyter-notebook --no-browser --port=8080
+  768  source ../research_env/bin/activate
+  769  clear
+  770  ls
+  771  clear
+  772  ls
+  773  history | grep jup
+  774  jupyter-notebook --no-browser --port=8080
+  775  source ../research_env/bin/activate
+  776  clear
+  777  history | grep jup
+  778  jupyter-notebook --no-browser --port=8080
+  779  source /home/thanhtran/dev/research_env/bin/activate
+  780  cat /proc/meminfo 
+  781  clear
+  782  ls
+  783  source research_env/bin/activate
+  784  clear
+  785  ls
+  786  cd vrdtransr/
+  787  ls
+  788  clear
+  789  history | grep jupy
+  790  jupyter-notebook --no-browser --port=8080
+  791  source /home/thanhtran/dev/research_env/bin/activate
+  792  source research_env/bin/activate
+  793  clear
+  794  cd vrdtransr/
+  795  clear
+  796  ls
+  797  history | grep jup
+  798  jupyter-notebook --no-browser --port=8080
+  799  source ./research_env/bin/activate
+  800  clear
+  801  ls
+  802  cd vrdtransr/
+  803  ls
+  804  clear
+  805  ls
+  806  history 
+  807  jupyter-notebook --no-browser --port=8080
+  808  pip freeze | grep pytorch
+  809  pip freeze | grep torch
+  810  histor> history
+  811  histoy r> history
+  812  clear
+  813  history > history
