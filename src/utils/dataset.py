@@ -17,8 +17,6 @@ torch.multiprocessing.set_sharing_strategy("file_system")
 
 from config import VRD_DATASET_PATH
 
-# VRD_DATASET_PATH = "../../data/vrd/"
-
 # custom transformation
 detectron_transform = T.Resize((800, 800))
 

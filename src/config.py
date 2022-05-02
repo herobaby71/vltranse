@@ -12,7 +12,7 @@ VRD_DATASET_PATH = os.path.join(ROOT_DIR, "data/vrd/")
 VG200_DATASET_PATH = os.path.join(ROOT_DIR, "data/vg200/")
 VRD_IMAGE_OUTPUT_PATH = os.path.join(VRD_DATASET_PATH, "out_images")
 VG200_IMAGE_OUTPUT_PATH = os.path.join(VG200_DATASET_PATH, "out_images")
-TRIPLES_EMBEDDING_PATH = os.path.join(GENERATED_DIR, "triples_embeddings.pt")
+TRIPLES_EMBEDDING_PATH = os.path.join(GENERATED_DIR, "triples_embeddings")
 
 
 def parse_args():
@@ -62,14 +62,17 @@ def parse_args():
     return parser.parse_args()
 
 
-def get_vrd_cfg(args={}):
+def get_vrd_cfg(args={}, model_conf='faster_rcnn_R_101_FPN_3x.yaml'):
     """
     Setup Configurations for the VRD Dataset
+    model:
+        - faster_rcnn_R_101_FPN_3x.yaml
+        - faster_rcnn_R_50_FPN_3x.yaml
     """
     # detectron 2 config (initialize with default coco config)
     cfg = get_cfg()
     cfg.merge_from_file(
-        model_zoo.get_config_file("COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml")
+        model_zoo.get_config_file("COCO-Detection/{}".format(model_conf))
     )
 
     # Dataset Config
@@ -82,7 +85,7 @@ def get_vrd_cfg(args={}):
 
     # Backbone network (initialize from pre-trained model zoo) - will not be used if `resume` training instead
     cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url(
-        "COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml"
+        "COCO-Detection/{}".format(model_conf)
     )
 
     # Solver Learning Rates
@@ -90,32 +93,25 @@ def get_vrd_cfg(args={}):
     cfg.SOLVER.MAX_ITER = 75600 if ("max_iter" not in args) else args["max_iter"]
 
     # Scheduler
-    cfg.SOLVER.BASE_LR = 0.001  # change this to adaptive weights later
+    cfg.SOLVER.BASE_LR = 0.0001  # change this to adaptive weights later
     cfg.SOLVER.GAMMA = 0.1
     cfg.SOLVER.STEPS = (53760, 60480)
 
     # Region of Interests
     cfg.MODEL.ROI_HEADS.BATCH_SIZE_PER_IMAGE = 512  # number of regions of interests
     cfg.MODEL.ROI_HEADS.NUM_CLASSES = 100
-    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.4  # might have to change to finetune (smaller if there are a lot of small objects in image)
+    cfg.MODEL.ROI_HEADS.SCORE_THRESH_TEST = 0.5  # might have to change to finetune (smaller if there are a lot of small objects in image)
     cfg.MODEL.DEVICE = "cuda"
 
     # Checkpoint period
     cfg.SOLVER.CHECKPOINT_PERIOD = 1500
 
     # Output directory
-    cfg.OUTPUT_DIR = os.path.join(ROOT_DIR, "checkpoint")
+    cfg.OUTPUT_DIR = os.path.join(ROOT_DIR, "checkpoint", "resnet")
 
     # Custom configurations
-    set_pretrained_weights(cfg, args)
+    cfg.VRD_RESNETS101_PRETRAINED_WEIGHTS = os.path.join(
+        cfg.OUTPUT_DIR, "model_final.pth"
+    )
 
     return cfg
-
-
-def set_pretrained_weights(cfg, args):
-    """
-    Pre-trained weights
-    """
-    cfg.VRD_RESNETS101_PRETRAINED_WEIGHTS = os.path.join(
-        cfg.OUTPUT_DIR, "res101_vrd_20_epochs.pth"
-    )

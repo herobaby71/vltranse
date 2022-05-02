@@ -61,7 +61,7 @@ def custom_mapper(dataset_dict):
 
 class CustomTrainer(DefaultTrainer):
     @classmethod
-    def build_train_loader(cls, cfg, dataset_name="vrd"):
+    def build_train_loader(cls, cfg):
         return build_detection_train_loader(cfg, mapper=custom_mapper)
 
     @classmethod
