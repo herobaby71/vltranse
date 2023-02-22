@@ -1,2 +1,2 @@
-# vrdtransr
-Visual Relation Detection with TransR
+# vrdtranse
+Visual Relation Detection with TransE and contrastive learning
